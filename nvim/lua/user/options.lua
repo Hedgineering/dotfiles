@@ -1,4 +1,5 @@
 local options = {
+  foldmethod = "syntax",                   -- fold according to language, zo open, zc close, zR open all, zM close all
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   cmdheight = 2,                           -- more space in the neovim command line for displaying messages

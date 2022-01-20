@@ -46,6 +46,7 @@ keymap("n", "-", "<C-x>", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "<C-c>", "<ESC>", opts)
 keymap("i", "<C-s>", "<ESC>:w<CR>a", opts)
 
 -- Visual --
