@@ -1,7 +1,11 @@
 {
-    "editor.fontSize": 18,
-    "bracketPairColorizer.depreciation-notice": false,
+    // Editor Config
     "editor.accessibilitySupport": "off",
+    "editor.fontSize": 18,
+    "editor.lineNumbers": "relative",
+    "terminal.integrated.fontSize": 15,
+    "bracketPairColorizer.depreciation-notice": false,
+    // Vim Plugin Config
     "vim.camelCaseMotion.enable": true,
     "vim.changeWordIncludesWhitespace": true,
     "vim.useSystemClipboard": true,
@@ -121,6 +125,4 @@
     "vim.highlightedyank.enable": true,
     "vim.foldfix": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "editor.lineNumbers": "relative"
-    
 }
