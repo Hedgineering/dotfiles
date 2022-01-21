@@ -1,0 +1,126 @@
+{
+    "editor.fontSize": 18,
+    "bracketPairColorizer.depreciation-notice": false,
+    "editor.accessibilitySupport": "off",
+    "vim.camelCaseMotion.enable": true,
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": " ",
+    "vim.normalModeKeyBindings": [
+        // Use easy bookmarks
+        {
+            "before": ["<leader>", "m"],
+            "commands": [
+                "bookmarks.toggle"
+            ]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": [
+                "bookmarks.list"
+            ]
+        },
+        // quick save
+        {
+            "before": ["<leader>","w"],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        },
+        {
+            "before": ["<leader>","q"],
+            "commands": [":q"]
+        },
+        // window mgmt
+        { // horizontal split
+            "before": ["<leader>", "s", "h"],
+            "commands": [":sp"]
+        },
+        { // vertical split
+            "before": ["<leader>", "s", "v"],
+            "after": ["<C-w>", "<C-v>"]
+        },
+        { // motion
+            "before": ["<C-h>"],
+            "after": ["<C-w>", "h"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<C-w>", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-w>", "k"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-w>", "l"]
+        },
+        { // window resize
+            "before": ["<C-Up>"],
+            "commands": [{"command": "workbench.action.increaseViewHeight", "args": []}]
+        },
+        {
+            "before": ["<C-Down>"],
+            "commands": [{"command": "workbench.action.decreaseViewHeight", "args": []}]
+        },
+        {
+            "before": ["<C-Right>"],
+            "commands": [{"command": "workbench.action.increaseViewWidth", "args": []}]
+        },
+        {
+            "before": ["<C-Left>"],
+            "commands": [{"command": "workbench.action.decreaseViewWidth", "args": []}]
+        },
+        // buffer management
+        {
+            "before": ["<leader>","n"],
+            "commands": [ ":bnext" ]
+        },
+        {
+            "before": ["<leader>","p"],
+            "commands": [ ":bprev" ]
+        },
+
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Fix Indent Highlight
+        {
+            "before": ["<"],
+            "after": ["<","g","v"]
+        },
+        {
+            "before": [">"],
+            "after": [">","g","v"]
+        },
+        // Replace without overriding paste register
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindings": [
+        // Bind L to $ and H to ^ in operator pending mode makes yL and dH work like y$ and d^ respectively.
+        {
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            "before": ["H"],
+            "after": ["^"]
+        }
+    ],
+    "vim.showMarksInGutter": true,
+    "vim.highlightedyank.enable": true,
+    "vim.foldfix": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "editor.lineNumbers": "relative"
+    
+}
