@@ -1,0 +1,76 @@
+let mapleader = " "
+
+" ==========
+" Options
+" ==========
+set tabstop=2
+set smarttab
+set shiftwidth=2
+set expandtab
+set background=dark
+set mouse=a
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set nohlsearch
+set incsearch
+set scrolloff=8
+
+" ==========
+" Remaps
+" ==========
+
+" Normal Mode
+
+"   Save and quit
+nnoremap <C-s> :w<cr>
+nnoremap <leader>q :q<cr>
+
+"   Copy Paste (copy into clipboard, paste without changing clipboard, copy to start or end of line)
+nnoremap y "*y
+nnoremap p pgvy
+onoremap L $
+onoremap H ^
+
+"   Window mgmt (horizontal and vertical split, motion, and resize)
+nnoremap <leader>sh :sp<cr>
+nnoremap <leader>sv <C-w><C-v>
+
+"   Window mgmt (motion)
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nnoremap <leader>n :vsc Window.NextTab<cr>
+nnoremap <leader>p :vsc Window.PreviousTab<cr>
+
+nnoremap <leader>s :vsc Window.NextTab<cr>
+nnoremap <leader>F :vsc View.FullScreen<cr>
+
+" next couple lines courtsey of https://fuqua.io/blog/2017/08/level-up-your-vsvim/
+" break out of the tyranny of text! Navigate by method
+nnoremap <leader>m :vsc Edit.NextMethod<cr>
+nnoremap <leader>M :vsc Edit.PreviousMethod<cr>
+
+nnoremap R :vsc Refactor.Rename<cr>
+
+" jump between compilation errors
+nnoremap <leader>e :vsc View.NextError<cr>
+nnoremap <leader>E :vsc View.PreviousError<cr>
+
+" testing and debugging
+nnoremap <leader>b :vsc Debug.ToggleBreakpoint<cr>
+nnoremap <leader>r :vsc TestExplorer.RunAllTestsInContext<cr>
+nnoremap <leader>R :vsc TestExplorer.DebugAllTestsInContext<cr>
+
+" open the change parameter window, a bit fake because it's not a text-object
+nnoremap cia :vsc Refactor.ReorderParameters<cr>
+
+" Insert Mode
+inoremap <C-c> <ESC>
+
+" Visual Mode (keep selection for further modification)
+vnoremap < <gv
+vnoremap > >gv
