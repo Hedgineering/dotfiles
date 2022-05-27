@@ -19,6 +19,8 @@ set scrolloff=8
 " ==========
 
 " Normal Mode
+"   Search File
+nnoremap <C-p> :vsc Edit.GoToFile<cr>
 
 "   Save and quit
 nnoremap <C-s> :w<cr>
