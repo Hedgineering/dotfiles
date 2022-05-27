@@ -25,6 +25,7 @@ nnoremap <C-s> :w<cr>
 nnoremap <leader>q :q<cr>
 
 "   Copy Paste (copy into clipboard, paste without changing clipboard, copy to start or end of line)
+vnoremap y "*y
 nnoremap y "*y
 nnoremap p pgvy
 onoremap L $
