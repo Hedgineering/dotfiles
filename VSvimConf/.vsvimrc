@@ -71,5 +71,5 @@ inoremap <C-c> <ESC>
 " Visual Mode (keep selection for further modification)
 vnoremap < <gv
 vnoremap > >gv
-vnoremap L <nop>
-vnoremap H <nop>
+vnoremap L $
+vnoremap H ^
