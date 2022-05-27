@@ -4,11 +4,8 @@ let mapleader = " "
 " Options
 " ==========
 set tabstop=2
-set smarttab
 set shiftwidth=2
 set expandtab
-set background=dark
-set mouse=a
 set number
 set relativenumber
 set ignorecase
