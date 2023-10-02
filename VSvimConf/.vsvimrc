@@ -76,3 +76,10 @@ vnoremap < <gv
 vnoremap > >gv
 vnoremap L $
 vnoremap H ^
+
+" Paste without moving cursor
+nnoremap p :let save_cursor = getcurpos()<CR>P:call setpos('.', save_cursor)<CR>
+nnoremap P :let save_cursor = getcurpos()<CR>gp:call setpos('.', save_cursor)<CR>
+
+" Paste without overriding paste register in select mode
+vnoremap p pgvy
