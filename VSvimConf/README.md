@@ -1,4 +1,7 @@
- handle Ctrl + a,  Ctrl + c, and  Ctrl + o with vsvim in tools > options > vsvim > keyboard
+# Visual Studio Vim (VS_VIM)
+## Last Updated: 10/01/2023
+
+Handle Ctrl + a,  Ctrl + c, and  Ctrl + o with vsvim in tools > options > vsvim > keyboard
 
 you can try customizing your Visual Studio key bindings to map the up and down movements in Intellisense directly. Here's how:
 
