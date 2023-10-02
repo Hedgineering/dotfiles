@@ -101,8 +101,13 @@
       "commands": [":bprev"]
     },
     {
+      "before": ["y", "y"],
+      "after": ["y", "y", "editor.action.clipboardCopyAction"]
+    },
+    {
       "before": ["y"],
-      "after": ["y", "editor.action.clipboardCopyAction"]
+      "commands": [":yank", "editor.action.clipboardCopyAction"],
+      "when": "editorTextFocus && vim.active && vim.visual"
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -119,6 +124,11 @@
     {
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": ["y"],
+      "commands": [":yank", "editor.action.clipboardCopyAction"],
+      "when": "editorTextFocus && vim.active && vim.visual"
     }
   ],
   "vim.operatorPendingModeKeyBindings": [
