@@ -99,6 +99,10 @@
     {
       "before": ["<leader>", "p"],
       "commands": [":bprev"]
+    },
+    {
+      "before": ["y"],
+      "after": ["y", "editor.action.clipboardCopyAction"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
